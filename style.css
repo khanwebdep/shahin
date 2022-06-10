@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto+Slab&display=swap');
+
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto Slab', serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+body{
+    background: linear-gradient(360deg, rgb(150, 217, 228), rgb(210, 233, 106));
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+#registration_form{
+    width: 500px;
+    height: auto;
+    margin: 100px auto;
+    padding: 20px;
+    background: linear-gradient(195deg, rgba(123, 176, 185,0.7), rgba(216, 72, 200, 0.721));
+    box-shadow: 12px 16px 8px rgb(79, 69, 69);
+    border-radius: 10px
+}
+#registration_form h1{
+    font-size: 30px;
+    text-align: center;
+    margin: 20px auto 30px auto;
+    text-decoration: underline;
+    text-decoration-color: antiquewhite;
+    font-family: 'Roboto Slab', serif;
+}
+#registration_form #form_content{
+    padding: 15px 0 30px 30px;
+}
+input{
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding-left: 5px ;
+}
+input:hover{
+    border: 2px solid rgb(51, 159, 202);
+}
+select{
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding-left: 5px ;
+}
+select:hover{
+    border: 2px solid rgb(51, 159, 202);
+}
+#img{
+    width: 185px;
+    padding-left: 0;
+}
+#reset_button{
+    float: left;
+    margin-left: 100px;
+    padding: 6px 25px;
+    border-radius: 40px;
+    background: rgb(199, 79, 79);
+    color: #fff;
+    transition: 0.7s;
+}
+#reset_button:hover{
+    background: #fff;
+    color: rgb(199, 79, 79);
+    font-weight: bold;
+    border: 2px solid rgb(199, 79, 79);
+}
+#submit_button{
+    float: right;
+    margin-right: 100px;
+    padding: 6px 25px;
+    border-radius: 40px;
+    background: rgb(199, 79, 79);
+    color: #fff;
+    transition: 0.7s;
+}
+#submit_button:hover{
+    background: #fff;
+    color: rgb(199, 79, 79);
+    font-weight: bold;
+    border: 2px solid rgb(199, 79, 79);
+}
+.red_box{
+    border: 2px solid red;
+}
+.green_box{
+    border: 2px solid green;
+}
+
+#egender{
+    font-size: 13px;
+    color: rgb(211, 5, 5);
+    margin-left: 5px;
+}
+#checkbox_title{
+    font-size: 14px;
+}
+form .fa-circle-exclamation{
+    color: red;
+    margin-left: -22px;
+    font-size: 15px;
+    visibility: hidden;
+}
+form .fa-circle-check{
+    color: rgb(9, 161, 60);
+    margin-left: -20px;
+    font-size: 15px;
+    visibility: hidden;
+}
+#checkbox2{
+    margin-left: 5px;
+}
+#epwd{
+    font-size: 13px;
+    margin-left: 10px;
+}
+input[type='radio']:after {
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #f40000;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid rgb(160, 223, 234);
+}
+
+input[type='radio']:checked:after {
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #04ff00;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid rgb(255, 255, 255);
+}

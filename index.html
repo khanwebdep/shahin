@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/92e7ae7486.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Form Validation</title>
+</head>
+<body>
+    <section id="registration_form_validation">
+        <section id="registration_form">
+            <h1 id="heading_title">Registration Form</h1>
+            <div id="form_content">
+                <form onsubmit="return validation()">
+
+                    <!-- FIRST NAME SECTION - START -->
+                <span id="content_title"> First Name : </span>
+                <input type="text" id="fname" placeholder="Enter Your First Name" onblur="fnameOnBlur(this.id)">
+                <i id="er1" class="fa-solid fa-circle-exclamation" onmouseover="commentFnameOver()" onmouseout="commentFnameOut()"></i>
+                <i id="su1" class="fa-solid fa-circle-check"></i>
+                <span id="comment1"></span>
+                <br><br>
+                    <!-- FIRST NAME SECTION - END -->
+
+                    <!-- LAST NAME SECTION - START -->
+                <span id="content_title">Last Name : </span>
+                <input type="text" id="lname" placeholder="Enter Your Last Name" onblur="fnameOnBlur(this.id)">
+                <i id="er2" class="fa-solid fa-circle-exclamation"></i>
+                <i id="su2" class="fa-solid fa-circle-check"></i>
+                <br><br>
+                    <!-- LAST NAME SECTION - END -->
+
+                    <!-- E-MAIL SECTION - START -->
+                <span id="content_title">E-mail : </span>
+                <input type="text" id="email" placeholder="info@khanit.com"  onblur="fnameOnBlur(this.id)">
+                <i id="er3" class="fa-solid fa-circle-exclamation"></i>
+                <i id="su3" class="fa-solid fa-circle-check"></i>
+                <br><br>
+                    <!-- E-MAIL SECTION - END -->
+
+                    <!-- CONTACT NO SECTION - START -->
+                <span id="content_title">Contact No : </span>
+                <input type="text" id="mobile" placeholder="+880 8888888888"  onblur="fnameOnBlur(this.id)">
+                <i id="er4" class="fa-solid fa-circle-exclamation"></i>
+                <i id="su4" class="fa-solid fa-circle-check"></i>
+                <br><br>
+                    <!-- CONTACT NO SECTION - END -->
+
+                    <!-- PASSWORD SECTION - START -->
+                <span id="content_title">Password : </span>
+                <input type="password" id="pwd" placeholder="Enter Your Password"  onblur="fnameOnBlur(this.id)" oninput="passwordOnInput(this.id)">
+                <i id="er5" class="fa-solid fa-circle-exclamation"></i>
+                <i id="su5" class="fa-solid fa-circle-check"></i>
+                <span id="epwd"></span>
+                <br><br>
+                    <!-- PASSWORD SECTION - END -->
+
+                    <!-- CONFIRM PASSWORD SECTION - START -->
+                <span id="content_title">Confirm Password : </span>
+                <input type="password" id="rpwd" placeholder="Enter Confirm Password"  onblur="fnameOnBlur(this.id)">
+                <i id="er6" class="fa-solid fa-circle-exclamation"></i>
+                <i id="su6" class="fa-solid fa-circle-check"></i>
+                <input type="checkbox" id="checkbox2" onclick="toggle()"><b id="checkbox_title">Show Password</b>
+                
+                <br><br>
+                    <!-- CONFIRM PASSWORD SECTION - END -->
+
+                    <!-- GENDER SECTION - START -->
+                <span id="content_title">Gender : </span>
+                <input name="gender" type="radio" id="gender_male"> Male
+                <input name="gender" type="radio" id="gender_female">Female
+                <input name="gender" type="radio" id="gender_prefer">Prefer not to say
+                <span id="egender"></span>
+                <br><br>
+                    <!-- GENDER SECTION - END -->
+
+                    <!-- BIRTH YEAR SECTION - START -->
+                <span id="content_title">Birth Year : </span>
+                <select id="birth_year" onchange="yearOnChange(this.value)">
+                    <option value= "0"> Select Year </option>
+                    <script>
+                        var d = new Date();
+                        ini = d.getFullYear();
+                        end = 1900;
+
+                        for ( ini ; ini >= end; ini-- ){
+                            document.write("<option value="+ini+">" +  ini + "</option>");
+                        }
+                    </script>
+                </select>
+                <br><br>
+                    <!-- BIRTH YEAR SECTION - END -->
+
+                    <!-- IMAGE SECTION - START -->
+                <span id="content_title">Image : </span>
+                <input type="file" id="img"  onblur="fnameOnBlur(this.id)">
+                <br><br>
+                    <!-- IMAGE SECTION - END -->
+
+                    <!-- RESET BUTTON SECTION - START -->
+                <input type="reset" id="reset_button">
+                    <!-- RESET BUTTON SECTION - END -->
+
+                    <!-- SUBMIT BUTTON SECTION - START -->
+                <input type="submit" id="submit_button" value="Register">
+                    <!-- SUBMIT BUTTON SECTION - END -->
+            
+                </form>
+            </div>
+        </section>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
